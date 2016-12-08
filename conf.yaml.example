@@ -1,0 +1,17 @@
+# YAML
+# username and password to use for python http webserver authentication
+username: username
+password: password
+# Port to bind to for the python http webserver
+# Important to note that low numbered privalaged ports will need you to run this as root or sudo user. this is NOT recommended
+# instead have a webserver or iptables forward requests to port 80 through to the low privilage port
+port: 8000
+host: 0.0.0.0
+# local printer name in CUPS
+printer-name: label-printer
+# Custom message to print, make sure not to exceed label horizontal size
+custom_message: ITServices
+# Jira authentication details
+jira_url: example.atlassian.net
+jira_username: username
+jira_password: password
