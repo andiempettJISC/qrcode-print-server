@@ -10,7 +10,7 @@ host: 0.0.0.0
 # local printer name in CUPS
 printer-name: label-printer
 # Custom message to print, make sure not to exceed label horizontal size
-custom_message: ITServices
+custom_message: hello world
 # Jira authentication details
 jira_url: example.atlassian.net
 jira_username: username
