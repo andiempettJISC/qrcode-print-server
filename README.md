@@ -40,3 +40,18 @@ see https://www.zebra.com/content/dam/zebra/manuals/en-us/printer/epl2-pm-en.pdf
     A65,130,0,2,1,1,N,"msg"
     A65,150,0,2,1,1,N,"msg"
     P1
+
+### JIRA webhook example
+
+navagate to admin > system > webooks > create a new webook
+
+    URL http://<user>:<pass>@<URL/IP of qrcode-print-server>
+    Events
+    Issue related events
+    JQL: project = "Inventory Project"
+    Issue created
+    Exclude bodyNo
+    Transitions
+    Create of IAM Workflow
+    
+Then you need to go to workflows > select the workflow specified in the webhook > edit > edit workflow 'create' > post functions > add post function > trigger a webhook > select the webhook you need
